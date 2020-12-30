@@ -285,7 +285,7 @@ begin
 	-- Script out the Role
 	DECLARE @roleDesc VARCHAR(MAX), @crlf VARCHAR(2)
 	SET @crlf = CHAR(13) + CHAR(10)
-	SET @roleDesc = 'CREATE ROLE [' + @roleName + ']' + @crlf + 'GO' + @crlf + @crlf
+	SET @roleDesc = 'CREATE ROLE [' + @RoleName + ']' + @crlf + 'GO' + @crlf + @crlf
 
 	SELECT    @roleDesc = @roleDesc +
 			CASE dp.state
